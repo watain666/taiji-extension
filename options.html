@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TâiJī Chhân Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body class="bg-gray-50 min-h-screen flex items-center justify-center font-sans">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-100">
+        <div class="flex items-center gap-3 mb-6">
+            <img src="assets/icon-512.png" alt="Logo" class="w-10 h-10 rounded-lg shadow-sm">
+            <h1 class="text-2xl font-bold text-gray-800">Settings</h1>
+        </div>
+
+        <div class="space-y-3">
+            <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Default Search Mode</p>
+
+            <label
+                class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 hover:border-blue-300 transition-all duration-200 group">
+                <input type="radio" id="gisu" name="defaultTab" value="gisu"
+                    class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500">
+                <div class="ml-3">
+                    <span class="block text-gray-800 font-medium group-hover:text-blue-700">Gí-sû 語詞</span>
+                    <span class="block text-xs text-gray-500">Search for words / phrases</span>
+                </div>
+            </label>
+
+            <label
+                class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 hover:border-blue-300 transition-all duration-200 group">
+                <input type="radio" id="ji" name="defaultTab" value="ji"
+                    class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500">
+                <div class="ml-3">
+                    <span class="block text-gray-800 font-medium group-hover:text-blue-700">Jī 字</span>
+                    <span class="block text-xs text-gray-500">Search for individual characters</span>
+                </div>
+            </label>
+        </div>
+
+        <button id="save"
+            class="w-full mt-8 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-4 rounded-xl transition-colors duration-200 border border-gray-200">
+            Save
+        </button>
+
+        <div id="status"
+            class="mt-4 text-center text-sm font-medium h-5 text-green-600 opacity-0 transition-opacity duration-300">
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
